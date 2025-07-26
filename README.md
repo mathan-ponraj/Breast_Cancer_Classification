@@ -1,36 +1,45 @@
+# Breast Cancer Classification using Logistic Regression
+
+A Machine Learning project that leverages Logistic Regression to classify tumours as **Benign** or **Malignant**, aiming to assist in early detection and treatment strategies for breast cancer.
+
+---
 
 ## Project Overview
 
-Breast cancer is one of the most common types of cancer affecting individuals worldwide. Early detection and classification can significantly improve treatment outcomes. This project leverages logistic regression to identify the nature of the tumour based on key features in the dataset.
+Breast cancer is one of the most common cancers worldwide. Early detection and accurate classification significantly improve treatment outcomes. This project utilises Logistic Regression to predict the nature of tumours based on diagnostic features.
+
+---
 
 ## Workflow
 
-The workflow is structured as follows:
+1. **Data Preprocessing**  
+   - Cleaned and prepared the dataset by handling missing values and selecting key features.
 
-- **Data Preprocessing**  
-  Cleaned and prepared the dataset for modelling by handling missing values and selecting relevant features.
+2. **Train-Test Split**  
+   - Split the data using Scikit-learn’s `train_test_split` for unbiased model evaluation.
 
-- **Train-Test Split**  
-  Divided the dataset into training and testing sets using Scikit-learn's `train_test_split` function to ensure unbiased evaluation.
+3. **Model Building**  
+   - Developed a Logistic Regression model with Scikit-learn, trained on the processed data.
 
-- **Model Building**  
-  Built a logistic regression model using the Scikit-learn library. The model was trained on the training data and tuned for performance.
+4. **Model Evaluation**  
+   - Evaluated model performance using accuracy score, achieving a final accuracy of **94%**.
 
-- **Evaluation**  
-  Measured the model's effectiveness using the accuracy score. The final model achieved an accuracy of **94%**, indicating strong predictive performance.
+---
 
 ## Technologies Used
-
 - Python
 - Scikit-learn
 - Pandas
 - NumPy
 - Jupyter Notebook
 
-## Results
+---
 
-The logistic regression model performed well on the test data, accurately classifying most cases. The simplicity and interpretability of logistic regression make it a solid choice for binary classification tasks such as this.
+## Results
+- The model classified tumour types with **94% accuracy** on test data.
+- Logistic Regression proved effective due to its simplicity, speed, and interpretability, making it an excellent baseline for binary classification tasks.
+
+---
 
 ## Conclusion
-
-This project demonstrates the effectiveness of logistic regression in medical classification problems. With a straightforward approach and proper preprocessing, the model delivers high accuracy and can be a helpful baseline for more complex models in future research.
+This project highlights how Logistic Regression, combined with proper data preprocessing, can serve as a reliable tool for medical classification problems like breast cancer detection. It establishes a strong foundation for exploring more advanced models in future research.
