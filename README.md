@@ -1,45 +1,73 @@
 # Breast Cancer Classification using Logistic Regression
 
-A Machine Learning project that leverages Logistic Regression to classify tumours as **Benign** or **Malignant**, aiming to assist in early detection and treatment strategies for breast cancer.
+## Case Study
+
+### Problem
+Early and accurate detection of breast cancer is critical for improving patient outcomes and supporting clinical decision-making.
+
+### Context
+This project applies supervised machine learning to classify breast tumors as **benign or malignant** using diagnostic features extracted from medical imaging data.
+
+### Impact
+- Built a binary classification model achieving **~93% accuracy on unseen test data**
+- Demonstrated strong generalization with minimal overfitting
+- Enabled fast, data-driven cancer diagnosis support
+
+### Why It Matters
+Accurate tumor classification helps clinicians prioritize treatment, reduce diagnostic errors, and improve patient survival rates.
 
 ---
 
-## Project Overview
+## What I Did
 
-Breast cancer is one of the most common cancers worldwide. Early detection and accurate classification significantly improve treatment outcomes. This project utilises Logistic Regression to predict the nature of tumours based on diagnostic features.
-
----
-
-## Workflow
-
-1. **Data Preprocessing**  
-   - Cleaned and prepared the dataset by handling missing values and selecting key features.
-
-2. **Train-Test Split**  
-   - Split the data using Scikit-learn’s `train_test_split` for unbiased model evaluation.
-
-3. **Model Building**  
-   - Developed a Logistic Regression model with Scikit-learn, trained on the processed data.
-
-4. **Model Evaluation**  
-   - Evaluated model performance using accuracy score, achieving a final accuracy of **94%**.
+- Built an end-to-end **binary classification pipeline**
+- Loaded and analyzed a real-world medical dataset from `scikit-learn`
+- Performed data validation, statistical analysis, and feature inspection
+- Trained and evaluated a **Logistic Regression** model
+- Implemented a prediction system for classifying new patient samples
 
 ---
 
-## Technologies Used
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
-- Jupyter Notebook
+## How I Did It (STAR Method)
+
+### Situation
+The dataset consisted of **30 numerical diagnostic features** derived from breast tumor images, with a binary target label.
+
+### Task
+Develop a reliable and interpretable machine learning model to classify tumors as benign or malignant.
+
+### Action
+- Loaded the Breast Cancer Wisconsin Diagnostic dataset
+- Converted raw data into a structured Pandas DataFrame
+- Performed exploratory data analysis (EDA) and statistical summaries
+- Verified class distribution and checked for missing values
+- Split data into training and testing sets (80/20)
+- Trained a Logistic Regression classifier using scikit-learn
+- Evaluated performance using accuracy metrics
+- Built a prediction pipeline for individual patient inputs
+
+### Result
+- **Training Accuracy:** ~94.7%
+- **Test Accuracy:** ~92.9%
+- Model generalized well without significant performance drop
+- Successfully classified unseen tumor samples
 
 ---
 
-## Results
-- The model classified tumour types with **94% accuracy** on test data.
-- Logistic Regression proved effective due to its simplicity, speed, and interpretability, making it an excellent baseline for binary classification tasks.
+## Tech Stack
+
+- **Programming Language:** Python
+- **Libraries:** NumPy, Pandas, Scikit-learn
+- **Model:** Logistic Regression
+- **Evaluation Metric:** Accuracy Score
+- **Dataset:** Breast Cancer Wisconsin (Diagnostic)
+- **Environment:** Jupyter Notebook
 
 ---
 
-## Conclusion
-This project highlights how Logistic Regression, combined with proper data preprocessing, can serve as a reliable tool for medical classification problems like breast cancer detection. It establishes a strong foundation for exploring more advanced models in future research.
+## Key Results / Business Impact
+
+- Delivered a high-accuracy medical classification model
+- Demonstrated effective use of logistic regression for healthcare data
+- Built a reusable pipeline for real-time cancer prediction
+- Established a strong baseline for future improvements (scaling, regularization, advanced classifiers)
