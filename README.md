@@ -1,4 +1,4 @@
-# Breast Cancer Classification using Logistic Regression
+# Breast Cancer Diagnostic Classification
 
 ## Project Overview
 This project focuses on a medical classification task: identifying whether a breast tumor is benign or malignant. I built this to demonstrate how machine learning can assist in clinical diagnostics by analyzing cell features from tumor images.
