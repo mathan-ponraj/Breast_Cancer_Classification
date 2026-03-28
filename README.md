@@ -1,64 +1,40 @@
 # Breast Cancer Classification using Logistic Regression
 
 ## Project Overview
-This project is a **learning-focused machine learning classification task** where I used Logistic Regression to classify breast tumors as **benign or malignant** based on diagnostic features.
+This project focuses on a medical classification task: identifying whether a breast tumor is benign or malignant. I built this to demonstrate how machine learning can assist in clinical diagnostics by analyzing cell features from tumor images.
 
-The goal of the project was to understand the **end-to-end workflow of a supervised learning problem**, including data preparation, model training, and evaluation.
+## The Problem
+In healthcare, early and accurate diagnosis is critical. The goal here is to use 30 different measurements—like texture, radius, and area—to categorize tumors into two clear groups:
+1. Benign (Non-cancerous)
+2. Malignant (Cancerous)
 
----
+## My Technical Workflow
 
-## Problem Statement
-Given diagnostic measurements extracted from breast tumor images, the task is to build a model that can classify tumors into two categories:
-- Benign
-- Malignant
+1. Data Setup: I used the Wisconsin Breast Cancer dataset from Scikit-learn and converted it into a structured format using Pandas for better analysis.
+2. Exploratory Analysis: I checked the dataset for missing values and made sure the classes were balanced to avoid biased results.
+3. Model Training: I split the data into 80% for training and 20% for testing. I chose Logistic Regression because it is a reliable and fast algorithm for binary classification.
+4. Testing: I ran the model on unseen data to see how it performs in a real-world scenario.
 
----
+## Results and Performance
+The model showed strong results and generalized well to new data:
+- Training Accuracy: Approximately 94%
+- Test Accuracy: Approximately 93%
 
-## What I Worked On
+Because the difference between training and testing accuracy is very small, it proves the model is stable and not overfitting.
 
-- Loaded and explored a real-world medical dataset from `scikit-learn`
-- Converted the data into a Pandas DataFrame for analysis
-- Performed basic exploratory data analysis (EDA)
-- Checked for missing values and class balance
-- Split the dataset into training and testing sets (80/20)
-- Trained a **Logistic Regression** model
-- Evaluated model performance using accuracy
+## Tools Used
+- Programming: Python
+- Data Libraries: Pandas and NumPy
+- Machine Learning: Scikit-learn
+- Analysis Environment: Jupyter Notebook
 
----
-
-## Dataset Information
-- Dataset: Breast Cancer Wisconsin (Diagnostic)
-- Features: 30 numerical diagnostic features
-- Target: Binary classification (benign / malignant)
-
----
-
-## Model Performance
-- **Training Accuracy:** ~94%
-- **Test Accuracy:** ~93%
-
-The results showed that the model generalized reasonably well, with no major performance drop between training and testing data.
+## Future Goals
+To make this system even more accurate for medical use, I plan to:
+- Use Feature Scaling to normalize the data.
+- Focus on Recall scores to ensure no malignant cases are missed.
+- Compare these results with other models like Random Forest or XGBoost.
 
 ---
-
-## Tools & Technologies Used
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Jupyter Notebook  
-
----
-
-## Key Learnings
-- How to prepare and explore structured datasets
-- How Logistic Regression works for binary classification
-- Importance of train-test split for model evaluation
-- Interpreting accuracy results and model performance
-- Building a simple prediction workflow for new inputs
-
----
-
-## Future Improvements
-- Try feature scaling and regularization
-- Experiment with other classification algorithms
-- Evaluate performance using additional metrics such as precision and recall
+Developed by Mathan Ponraj
+CSE Graduate | Data Science and Analytics
+[LinkedIn Profile](https://www.linkedin.com)
